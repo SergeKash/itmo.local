@@ -105,7 +105,7 @@ body, html {
     }
 }
 
-/*------------INTRODUCTION----------*/
+/*------------INTRODUCTION---MENU-----------*/
 
 .introduction__row-col-menu {
     display: flex;
@@ -173,4 +173,132 @@ text-decoration: none;
     }
 }
 
+
+/*------------INTRODUCTION---BLOCK-----------*/
+
+.intro-block-wrap {
+    height: 828px;
+    background-image: url(../img/intro-block.png);
+    background-size: 46.6%;
+    background-repeat: no-repeat;
+    background-position: 26.1% 57px;
+}
+
+
+.introduction__row-block {
+    margin-top: 109px;
+    margin-right: 52px;
+}
+
+.introduction__row-block>h1 {
+    font-family: 'philosopherregular';
+    font-size: 55px;
+    color: #005c7b;
+}
+
+.introduction__row-block>h1 span{
+    display: block;
+    margin-top: 46px;
+}
+
+.introduction__row-block>p {
+    font-family: 'robotomedium';
+    font-size: 24px;
+    color: #005c7b;
+    margin-top: 102px;
+    margin-left: 2px;
+}
+
+
+.introduction__row-block>a {
+    font-family: 'robotoregular';
+    font-size: 30px;
+    width: auto;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #005c7b;
+    margin: 58px 11px 0 auto;
+    border-radius: 100px;
+    padding: 9px 21px 13px 20px;
+}
+
+@media screen and (max-width: 1399px) {
+    .intro-block-wrap {
+        background-position-x: 18%;
+    }
+
+    .introduction__row-block {
+        justify-content: end;
+    }
+
+    .introduction__row-block>h1 {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .introduction__row-block h1 {
+        font-size: 35px;
+    }
+
+    .introduction__row-block h1 span {
+        font-size: 35px;
+        margin-top: 10px;
+    }
+
+    .introduction__row-block p {
+        font-size: 20px;
+    }
+
+    .introduction__row-block a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .introduction__row-block {
+        margin-right: 0;
+        margin-top: 50px;
+    }
+    .introduction__row-block>p {
+    flex-basis: 288px;
+    margin-left: 42%;
+    }
+
+    .introduction__row-block h1 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .introduction__row-block>h1 span{
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 695px) {
+
+    .intro-block-wrap {
+        background-image: none;
+    }
+    .introduction__row-block * {
+        text-align: center !important;
+    }
+
+    .introduction__row-block p, .introduction__row-block a {
+        width: auto;
+        margin: 0;
+        flex-basis: 100%;
+    }
+
+    .introduction__row-block h1 span {
+        margin-bottom: 20px;
+    }
+
+    .introduction__row-block p {
+        margin-bottom: 20px;
+    }
+
+}
 
